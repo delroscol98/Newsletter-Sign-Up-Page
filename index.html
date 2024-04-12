@@ -17,23 +17,44 @@
     </title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <script defer src="./main.js"></script>
   </head>
   <body>
-    <!-- Sign-up form start -->
+    <main class="card">
+      <!-- Sign-up form start -->
 
-    Stay updated! Join 60,000+ product managers receiving monthly updates on:
-    Product discovery and building what matters Measuring to ensure updates are
-    a success And much more! Email address email@company.com Subscribe to
-    monthly newsletter
+      <article class="img-container">
+        <picture>
+          <source
+            media="(max-width: 425px)"
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+          />
+          <source
+            media="(min-width: 426px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="sign-up image"
+          />
+        </picture>
+      </article>
+      Stay updated! Join 60,000+ product managers receiving monthly updates on:
+      Product discovery and building what matters Measuring to ensure updates
+      are a success And much more! Email address email@company.com Subscribe to
+      monthly newsletter
 
-    <!-- Sign-up form end -->
+      <!-- Sign-up form end -->
 
-    <!-- Success message start -->
+      <!-- Success message start -->
 
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
+      Thanks for subscribing! A confirmation email has been sent to
+      ash@loremcompany.com. Please open it and click the button inside to
+      confirm your subscription. Dismiss message
 
-    <!-- Success message end -->
+      <!-- Success message end -->
+    </main>
   </body>
 </html>

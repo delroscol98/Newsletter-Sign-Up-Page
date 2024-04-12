@@ -26,6 +26,7 @@ html {
 
 body {
   min-height: 100vh;
+  background: var(--neutral-charcoal-grey);
 }
 
 *,
@@ -34,4 +35,45 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+main {
+  background-color: var(--neutral-white);
+  width: 100%;
+  min-height: inherit;
+}
+
+/* Main image */
+.img-container img {
+  width: 100%;
+}
+
+/* Utility Classes */
+
+@media screen and (min-width: 47.6em) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    background-color: var(--neutral-white);
+    width: 64.444%;
+    min-height: 44.514vw;
+  }
+
+  /* Main image */
+  .img-container img {
+    width: 43.103%;
+    margin: 1.667vw;
+    border-radius: 3.2rem;
+    display: inline;
+    float: right;
+  }
+
+  /* Utility Classes */
+  .card {
+    border-radius: 3.6rem;
+  }
 }
