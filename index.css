@@ -86,6 +86,15 @@ button {
   border-radius: 0.8rem;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background: linear-gradient(#ff6a3a, #ff527b);
+  filter: drop-shadow(0 1.6rem 3.2rem rgba(255, 97, 85, 50%));
+}
+
 form {
   display: grid;
   gap: 2.4rem;
@@ -156,8 +165,7 @@ form {
 
   main {
     background-color: var(--neutral-white);
-    /* width: 64.444%; WIDTH NEEDS TO BE TOGGLED */
-    width: 35%;
+    width: 64.444%;
   }
 
   /* Custom Styling */
