@@ -41,8 +41,6 @@ body {
 
 main {
   background-color: var(--neutral-white);
-  width: 100%;
-  min-height: inherit;
 }
 
 /* Custom styling */
@@ -158,8 +156,8 @@ form {
 
   main {
     background-color: var(--neutral-white);
-    width: 64.444%;
-    min-height: 44.514vw;
+    /* width: 64.444%; WIDTH NEEDS TO BE TOGGLED */
+    width: 35%;
   }
 
   /* Custom Styling */
@@ -199,6 +197,15 @@ form {
 
   .user-input {
     gap: 0.556vw;
+  }
+
+  .success {
+    padding: 3.333vw 4.444vw;
+    gap: 4rem;
+  }
+
+  .success-feedback {
+    margin: 0;
   }
 
   /* Utility Classes */
