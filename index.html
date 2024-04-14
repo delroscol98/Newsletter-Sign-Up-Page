@@ -24,66 +24,80 @@
   <body>
     <main class="card">
       <!-- Sign-up form start -->
-
-      <article class="img-container">
-        <picture>
-          <source
-            media="(max-width: 425px)"
-            srcset="./assets/images/illustration-sign-up-mobile.svg"
-          />
-          <source
-            media="(min-width: 426px)"
-            srcset="./assets/images/illustration-sign-up-desktop.svg"
-          />
-          <img
-            src="./assets/images/illustration-sign-up-desktop.svg"
-            alt="sign-up image"
-          />
-        </picture>
-      </article>
-      <section class="container-main">
-        <section class="container-text">
-          <h1 class="roboto-bold heading-lg">Stay updated</h1>
-          <p class="roboto-regular text-base">
-            Join 60,000+ product managers receiving monthly updates on:
-          </p>
-          <ul>
-            <img src="./assets/images/icon-list.svg" alt="list icon" />
-            <li class="roboto-regular text-base">
-              Product discovery and building what matters
-            </li>
-            <img src="./assets/images/icon-list.svg" alt="list icon" />
-            <li class="roboto-regular text-base">
-              Measuring to ensure updates are a success
-            </li>
-            <img src="./assets/images/icon-list.svg" alt="list icon" />
-            <li class="roboto-regular text-base">And much more!</li>
-          </ul>
-        </section>
-        <section class="container-form"></section>
-        <form>
-          <article class="user-input">
-            <label for="email" class="roboto-regular text-sm"
-              >Email address</label
-            >
-            <input
-              class="text-base"
-              type="text"
-              name="email"
-              id="email"
-              placeholder="email@company.com"
+      <section id="sign-up" class="hidden">
+        <article class="img-container">
+          <picture>
+            <source
+              media="(max-width: 425px)"
+              srcset="./assets/images/illustration-sign-up-mobile.svg"
             />
-          </article>
-          <button class="text-base-bold" type="button">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
+            <source
+              media="(min-width: 426px)"
+              srcset="./assets/images/illustration-sign-up-desktop.svg"
+            />
+            <img
+              src="./assets/images/illustration-sign-up-desktop.svg"
+              alt="sign-up image"
+            />
+          </picture>
+        </article>
+        <section class="container-main">
+          <section class="container-text">
+            <h1 class="roboto-bold heading-lg">Stay updated</h1>
+            <p class="roboto-regular text-base">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul>
+              <img src="./assets/images/icon-list.svg" alt="list icon" />
+              <li class="roboto-regular text-base">
+                Product discovery and building what matters
+              </li>
+              <img src="./assets/images/icon-list.svg" alt="list icon" />
+              <li class="roboto-regular text-base">
+                Measuring to ensure updates are a success
+              </li>
+              <img src="./assets/images/icon-list.svg" alt="list icon" />
+              <li class="roboto-regular text-base">And much more!</li>
+            </ul>
+          </section>
+          <section class="container-form"></section>
+          <form>
+            <article class="user-input">
+              <label for="email" class="roboto-regular text-sm"
+                >Email address</label
+              >
+              <input
+                class="text-base"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="email@company.com"
+              />
+            </article>
+            <button class="text-base-bold" type="button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </section>
       </section>
 
       <!-- Sign-up form end -->
 
       <!-- Success message start -->
-
+      <section class="success">
+        <section class="success-feedback">
+          <img src="./assets/images/icon-success.svg" alt="success icon" />
+          <article class="success-text">
+            <h1 class="roboto-bold heading-lg">Thanks for subscribing!</h1>
+            <p class="roboto-regular text-base">
+              A confirmation email has been sent to
+              <strong> ash@loremcompany.com.</strong> Please open it and click
+              the button inside to confirm your subscription
+            </p>
+          </article>
+        </section>
+        <button class="text-base">Dismiss message</button>
+      </section>
       <!-- Success message end -->
     </main>
   </body>

@@ -46,6 +46,8 @@ main {
 }
 
 /* Custom styling */
+
+/* Sign up form */
 .img-container img {
   width: 100%;
 }
@@ -96,7 +98,29 @@ form {
   gap: 0.8rem;
 }
 
+/* Success */
+.success {
+  display: grid;
+  gap: 26.3rem;
+  padding: 0 2.4rem 4rem;
+}
+
+.success-feedback {
+  display: grid;
+  gap: 4rem;
+  margin-top: 14.9rem;
+}
+
+.success-text {
+  display: grid;
+  gap: 2.4rem;
+}
+
 /* Utility Classes */
+.hidden {
+  display: none;
+}
+
 .container-main {
   padding: 4rem 6.4vw;
   display: flex;
