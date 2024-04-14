@@ -4,19 +4,21 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: var(--neutral-charcoal-grey);
 }
 
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--neutral-charcoal-grey);
 }
 
 :root {
   --primary-tomato: hsl(4, 100%, 67%);
   --neutral-dark-slate-grey: hsl(234, 29%, 20%);
   --neutral-charcoal-grey: hsl(235, 18%, 26%);
-  --neutral-grey: hsl(231, 7%, 60%);
+  --neutral-grey: rgb(146, 148, 160);
   --neutral-white: hsl(0, 0%, 100%);
 }
 
@@ -43,12 +45,85 @@ main {
   min-height: inherit;
 }
 
-/* Main image */
+/* Custom styling */
 .img-container img {
   width: 100%;
 }
 
+.container-main p {
+  margin: 2.4rem 0;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 2.1rem auto;
+  grid-template-rows: 1fr 1fr auto;
+  gap: 1rem 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  height: 5.6rem;
+  padding-left: 6.4vw;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(146, 148, 160, 25%);
+}
+
+button {
+  width: 100%;
+  height: 5.6rem;
+  border: none;
+  background-color: var(--neutral-dark-slate-grey);
+  color: var(--neutral-white);
+  border-radius: 0.8rem;
+}
+
+form {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.user-input {
+  display: grid;
+  gap: 0.8rem;
+}
+
 /* Utility Classes */
+.container-main {
+  padding: 4rem 6.4vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading-lg {
+  font-size: 4rem;
+}
+
+.text-base {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.text-base-bold {
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.text-sm {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 150%;
+}
 
 @media screen and (min-width: 47.6em) {
   body {
