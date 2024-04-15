@@ -16,22 +16,22 @@ const validateForm = (e) => {
     signUpSect.classList.toggle("hidden");
     successSect.classList.toggle("hidden");
     main.style.width = "35%";
+
+    console.log(`User email: ${userEmail}`);
   } else {
     errorMsg.classList.remove("hidden");
     emailInput.classList.add("error");
   }
 };
 
-const dismissSuccessMsg = (e) => {
-  e.preventDefault();
-
+const dismissSuccessMsg = () => {
   signUpSect.classList.toggle("hidden");
   successSect.classList.toggle("hidden");
   main.style.width = "64.444%";
 
   emailInput.value = "";
-  errorMsg.classList.toggle("hidden");
-  emailInput.classList.toggle("error");
+  errorMsg.classList.add("hidden");
+  emailInput.classList.remove("error");
 };
 
 submitBtn.addEventListener("click", validateForm);
