@@ -105,6 +105,11 @@ form {
   gap: 0.8rem;
 }
 
+.user-input-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Success */
 .success {
   display: grid;
@@ -154,6 +159,17 @@ form {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 150%;
+}
+
+.error {
+  background: rgba(255, 97, 85, 15%);
+  color: var(--primary-tomato);
+  border: 1px solid var(--primary-tomato);
+}
+
+#error-message {
+  color: var(--primary-tomato);
+  margin: 0;
 }
 
 @media screen and (min-width: 47.6em) {

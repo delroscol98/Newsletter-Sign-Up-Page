@@ -63,18 +63,24 @@
           <section class="container-form"></section>
           <form>
             <article class="user-input">
-              <label for="email" class="roboto-regular text-sm"
-                >Email address</label
-              >
+              <article class="user-input-labels">
+                <label for="email" class="roboto-regular text-sm"
+                  >Email address</label
+                >
+                <p id="error-message" class="roboto-regular text-sm hidden">
+                  Valid email required
+                </p>
+              </article>
               <input
                 class="text-base"
                 type="text"
                 name="email"
                 id="email"
                 placeholder="email@company.com"
+                required
               />
             </article>
-            <button class="text-base-bold" type="button">
+            <button id="submit" class="text-base-bold" type="submit">
               Subscribe to monthly newsletter
             </button>
           </form>
@@ -96,7 +102,7 @@
             </p>
           </article>
         </section>
-        <button class="text-base">Dismiss message</button>
+        <button id="dismiss" class="text-base">Dismiss message</button>
       </section>
       <!-- Success message end -->
     </main>
